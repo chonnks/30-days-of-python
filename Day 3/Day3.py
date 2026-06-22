@@ -49,4 +49,69 @@ x_int = 1
 y_int = -2
 
 #Slope is (m = y2-y1/x2-x1). Find the slope and Euclidean distance between point (2, 2) and point (6,10)
-slope_2 = 
+slope_2 = (10-2)/(6-2)
+euclidean_dist = (((2-6)**2)+((2-10)**2))**0.5
+
+print(euclidean_dist)
+print(slope_2)
+
+#compare both slopes
+slopes_comp = slope_2 - float(slope)
+print(slopes_comp)
+
+#Calculate the value of y (y = x^2 + 6x + 9). Try to use different x values and figure out at what x value y is going to be 0.
+#y is 0 at -3
+
+0 == ((-3)**2 +6*(-3)+9)
+
+#Find the length of 'python' and 'dragon' and make a falsy comparison statement.
+python_len = len('python')
+dragon_len = len('dragon')
+
+python_len == dragon_len
+
+#Use and operator to check if 'on' is found in both 'python' and 'dragon'
+print('on' in 'python' and 'on' in 'dragon') #Take note of how this is done
+
+#I hope this course is not full of jargon. Use in operator to check if jargon is in the sentence.
+print('on' in 'I hope this course is not full of jargon')
+
+#Find the length of the text python and convert the value to float and convert it to string
+print(float(len('python')))
+print(str(len('python')))
+
+#Even numbers are divisible by 2 and the remainder is zero. How do you check if a number is even or not using python?
+# how to check: num % 2 == 0
+
+#Check if the floor division of 7 by 3 is equal to the int converted value of 2.7.
+floor = 7//3
+print(floor)
+
+#Check if type of '10' is equal to type of 10
+print(type(10))
+print(type('10'))
+
+#Check if int('9.8') is equal to 10
+int('9.8')
+
+#Write a script that prompts the user to enter hours and rate per hour. Calculate pay of the person?
+hours =(float(input('Enter your hours per week: ')))
+rate = (float(input('Enter rate per hour: ')))
+
+earning = hours * rate
+
+print(" Your weekly earning is: " + str(earning))
+
+#Write a script that prompts the user to enter number of years. Calculate the number of seconds a person can live. Assume a person can live hundred years
+years = (float(input('Enter the number of years: ')))
+seconds = float(31536000)
+
+years_person_lives = years * seconds
+
+print('You have lived for ' + str(years_person_lives) + ' seconds.')
+
+
+#Write a Python script that displays the following table
+table = "1 1 1 1 1\n2 1 2 4 8\n3 1 3 9 27\n4 1 4 16 64\n5 1 5 25 125"
+
+print(table)
