@@ -388,3 +388,4 @@ china, russia , usa, *scandic = countries_short
 
 print(china)
 print(scandic)
+
